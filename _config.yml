@@ -12,6 +12,9 @@ baseurl: ''
 # otherwise, the layout language will use the default value of 'en'.
 lang: en
 
+languages: ["en", "zh-TW", "ja"]
+exclude_from_localizations: ["javascript", "images", "css"]
+
 # Additional parameters for datetime localization, optional. › https://github.com/iamkun/dayjs/tree/dev/src/locale
 prefer_datetime_locale:
 
@@ -179,6 +182,9 @@ compress_html:
   blanklines: false
   ignore:
     envs: [development]
+
+plugins:
+  - jekyll-multiple-languages-plugin
 
 exclude:
   - '*.gem'
